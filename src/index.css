@@ -1,9 +1,11 @@
 body {
 background-color: rgb(242, 242, 242);
+font-family: sans-serif;
   
 }
 *{
   padding:0 ;
   margin: 0;
   box-sizing: border-box;
+  transition: .2s;
 }
