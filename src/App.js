@@ -1,10 +1,11 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import Home from "./Components/Home";
+import Home from "./Components/Home/Home";
 import Projects from "./Components/Projects";
 import Exprience from "./Components/Exprience";
 import Educatios from "./Components/Educatios";
 import Navigation from "./Components/Navigation";
+import Questions from "./Components/Question";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
           <Route path="/Exprience" element={<Exprience />} />
           <Route path="/Projects" element={<Projects />} />
           <Route path="/Educatios" element={<Educatios />} />
+          <Route path="/questions" element={<Questions />} />
+
         </Routes>
       </div>
     </div>

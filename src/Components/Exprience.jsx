@@ -8,16 +8,16 @@ import WorkIcon from '@mui/icons-material/Work';
 const Experience = () => {
   return (
     <div className='experience'>
-      <VerticalTimeline lineColor='#3e497a'>
-        <VerticalTimelineElement icon={<SchoolIcon/>} iconStyle={{background:"#000057" ,color:"#fff"}} date='2010 - 2018' className='vertical-timeline-element--education'>
+      <VerticalTimeline lineColor='var(--f2)'>
+        <VerticalTimelineElement icon={<SchoolIcon/>} iconStyle={{background:"var(--f2)" ,color:"#fff"}} date='2010 - 2018' className='vertical-timeline-element--education'>
           <h3 className='vertical-timeline-element-title'>My Random High School , Random State</h3>
 
         </VerticalTimelineElement>
-        <VerticalTimelineElement icon={<SchoolIcon/>} iconStyle={{background:"#000057" ,color:"#fff"}} date='2010 - 2018' className='vertical-timeline-element--education'>
+        <VerticalTimelineElement icon={<SchoolIcon/>} iconStyle={{background:"var(--f2)" ,color:"#fff"}} date='2010 - 2018' className='vertical-timeline-element--education'>
           <h3 className='vertical-timeline-element-title'>My Random High School , Random State</h3>
 
         </VerticalTimelineElement>
-        <VerticalTimelineElement icon={<WorkIcon />} iconStyle={{background:"#000057" ,color:"#fff"}} date='2010 - 2018' className='vertical-timeline-element--education'>
+        <VerticalTimelineElement icon={<WorkIcon />} iconStyle={{background:"var(--f2)" ,color:"#fff"}} date='2010 - 2018' className='vertical-timeline-element--education'>
           <h3 className='vertical-timeline-element-title'>My Random High School , Random State</h3>
           <p>high School Diploma</p>
 

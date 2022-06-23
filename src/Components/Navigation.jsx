@@ -1,59 +1,34 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
 import "../styles/navigation.css"
-const Projects = () => {
+const Navigation = () => {
     let activeStyle = {
      
         color:"white"
         
       };
-    
       let activeClassName = "red";
+      const linkNavigation=[{address:"/" ,name:"Home"},{address:"Exprience" ,name:"Exprience"},{address:"Projects" ,name:"Projects"},{address:"questions" ,name:"questions ?"}]
   return (
     <div className="navigation">
+      <div>
+        
+      </div>
     <nav>
       <ul className='ul-navigation'>
-        
-        <li className='li'>
-          <NavLink
-            to="Exprience"
-            style={({ isActive }) =>
-              isActive ? activeStyle : undefined
-            }
-          >
-            Exprience
-          </NavLink>
-        </li>
-     <li className='li'>
-     <NavLink
-            to="Projects"
-            style={({ isActive }) =>
-              isActive ? activeStyle : undefined
-            }
-          >
-            Projects
-          </NavLink>
-     </li>
-     <li className='li'>
-     <NavLink
-            to="Educatios"
-            style={({ isActive }) =>
-              isActive ? activeStyle : undefined
-            }
-          >
-            Educatios
-          </NavLink>
-     </li>
-     <li className='li'>
-          <NavLink
-            to="/"
-            style={({ isActive }) =>
-              isActive ? activeStyle : undefined
-            }
-          >
-            Home
-          </NavLink>
-        </li>
+        {linkNavigation.map((elem,index)=>(
+ <li className='li' key={index}>
+ <NavLink
+   to={elem.address}
+   style={({ isActive }) =>
+     isActive ? activeStyle : undefined
+   }
+ >
+   {elem.name}
+ </NavLink>
+</li>
+        ))}
+       
       </ul>
     </nav>
  
@@ -61,5 +36,5 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Navigation
 

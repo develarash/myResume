@@ -1,0 +1,61 @@
+
+.container {
+  background: #939393;
+}
+.inner {
+  justify-content: space-around;
+  display: flex;
+}
+.logo{
+    cursor: pointer;
+    text-align: center;
+}
+
+.logo svg{
+    width: 70%;
+
+}
+.logo svg:hover{
+    filter: saturate(2);
+}
+.logo span{
+
+}
+ @media screen and (max-width: 470px) {
+  .inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo{
+    margin: 2vh 0;
+  }
+}
+
+
+
+  .logo[title] {
+    position: relative;
+    
+    /* ensure consistent styling across browsers */
+    text-decoration: underline dotted; 
+  }
+  
+  .logo[title]:hover::after,
+  .logo[title]:focus::after {
+    content: attr(title);
+    /* position tooltip like the native one */
+    position: absolute;
+    left: 100%;
+    bottom: -10px;
+    width: auto;
+    white-space: nowrap;
+    
+    /* style tooltip */
+    background-color: var(--f2);
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.4);
+    font-size: 80%;
+    padding: 3px 5px;
+  }
