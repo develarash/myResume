@@ -1,3 +1,4 @@
+
 import Lanpro from "./Lanpro"
 
 const Home = () => {

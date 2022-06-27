@@ -1,0 +1,62 @@
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1600px;
+  width: 100%;
+  background: red;
+}
+
+.project {
+  width: max-content;
+  line-height: 0;
+  flex-flow: 1;
+  padding: 1.3rem;
+  border-radius: 50%;
+}
+.project .img {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  min-height: 15rem;
+}
+.project .img img {
+  width: 100%;
+  height: 100%;
+}
+.project h1,
+.skills {
+  margin: 0 auto;
+}
+.skills {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.skills span {
+  margin-right: 20px;
+  font-size: 85%;
+
+}
+.skills span:nth-child(1) {
+ font-weight: 800;
+ font-size: 110%;
+
+  }
+
+.skills span:hover {
+
+}
+
+@media screen and (max-width:850) {
+  .project {
+      margin: 0 auto;
+      max-width: 48%;
+    }   
+  
+}
+
+@media screen and (max-width:1050) {
+  
+}

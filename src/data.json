@@ -1,0 +1,27 @@
+[
+  {
+    "name": "calculator",
+    "img": "pic1",
+    "skills": "JavaScript , Html , css"
+  },
+  {
+    "name": "Ecommerce website",
+    "img": "pic2",
+    "skills": "JavaScript , Html , css , nodeJs"
+  },
+  {
+    "name": "Resume",
+    "img": "pic3",
+    "skills": "JavaScript , Html , sass , reactJs"
+  },
+  {
+    "name": "Resume",
+    "img": "pic3",
+    "skills": "JavaScript , Html , sass , reactJs"
+  },
+  {
+    "name": "Resume",
+    "img": "pic3",
+    "skills": "JavaScript , Html , sass , reactJs"
+  }
+]
