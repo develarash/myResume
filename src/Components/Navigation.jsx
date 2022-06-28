@@ -4,7 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import "../styles/navigation.css"
 const Navigation = () => {
-  const [toggle,setToggle]=useState(true)
+  const [toggle,setToggle]=useState(false)
 
     let activeStyle = {
      
@@ -17,8 +17,8 @@ const Navigation = () => {
     <div className="navigation">
       
     <nav>
-      <div  className='toggle-icon' onClick={()=>setToggle(!toggle)}>{toggle?<MenuIcon/> :<MenuOpenIcon/>}</div>
-      <ul className={toggle?"ul-navigation":" ul-navigation active "}>
+      <div  className='toggle-icon' onClick={()=>setToggle(!toggle)}>{toggle? <MenuOpenIcon/>:<MenuIcon/>}</div>
+      <ul className={toggle?" ul-navigation active ":"ul-navigation"}>
         {linkNavigation.map((elem,index)=>(
  <li className='li' key={index}  onClick={()=>setToggle(!toggle)}>
  <NavLink
