@@ -4,10 +4,13 @@
   align-items: center;
  /* background-color: orange; */
   /* min-width:  -webkit-fill-available;; */
- min-height: 100vh;
+ /* min-height: 100vh; */
 gap: 5vh;
+padding:0 2px;
+position: relative;
 }
 .contect{
+
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 

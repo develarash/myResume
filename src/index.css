@@ -1,7 +1,8 @@
 body {
 background-color:var(--f1);
 font-family: sans-serif;
-  
+width: 100%;
+  /* min-height: 120vh; */
 }
 *{
   padding:0 ;
@@ -13,6 +14,10 @@ font-family: sans-serif;
 }
 :root {
   --f1: #ffffff;
-  --f2: #001373;
-  --f3:   #c60000;
+  --f2: #000000;
+  --f3:   #ffd900;
+}
+*::selection{
+  background-color: #ffd900;
+  color: black;
 }

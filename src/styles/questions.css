@@ -6,12 +6,12 @@
     align-items: center;
     flex-direction: column;
 
+    margin-top: 6%;
+
 }
 
 .item{   
-    max-width: 100%;
-    min-width: 100%;
-
+    width: 80%;
 }
 .title{
 color: rgb(255, 255, 255);
@@ -19,16 +19,11 @@ background-color: var(--f2);
 display: flex;
 justify-content: space-between;
 align-items: center;
-cursor: pointer;        padding: 20px;
-border-radius: 20px;   
- overflow: hidden;
-margin-bottom: 20px;
-}
-.title span{ 
-    font-size: 2rem;
-}
-.red{
-    color: red;
+cursor: pointer;       
+ padding: 10px;
+border-radius: 8px}
+.yellow{
+    color:var(--f3);
 }
 .white{
     color: white;

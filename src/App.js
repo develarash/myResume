@@ -7,6 +7,7 @@ import Educatios from "./Components/Educatios";
 import Navigation from "./Components/Navigation";
 import Questions from "./Components/Question";
 import News from "./Components/News";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/news" element={<News />} />
 
         </Routes>
+        <Footer/>
     </div>
   );
 }

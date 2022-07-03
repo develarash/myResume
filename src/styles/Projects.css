@@ -1,62 +1,224 @@
 .projects {
   display: flex;
-  flex-wrap: wrap;
   margin: 0 auto;
   max-width: 1600px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   width: 100%;
-  background: red;
+  justify-content: center;
+}
+.searchInput{
+  display: flex;
+  background-color: black;
+  border: 2px solid black;
+  padding: 7px;
+  /* background-color: ; */
+  outline: none;
+  border-radius: 15px;
+  width: 20%;
+
+}
+.searchInput input{
+  width: 100%;
+  background-color: black;
+  margin-left: 5px;
+  outline: none;
+  border: none;
+color: var(--f3);
+font-size: 120%;
+font-weight: bold;
+}
+.searchInput svg{
+color: var(--f3);
+font-size: 190%
+;}
+.searchInput input:focus{
+  outline: none;
+  border: none;
+ 
 }
 
+.flex-proj {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
 .project {
   width: max-content;
   line-height: 0;
+  margin: 50px 0;
   flex-flow: 1;
-  padding: 1.3rem;
-  border-radius: 50%;
+}
+
+
+.project:hover .info .gitsecton svg {
+  fill: none;
+  fill: rgb(0, 0, 0);
+  stroke: rgb(255, 217, 0);
+  stroke-width: 1px;
+}
+.project:hover .info .gitsecton span {
+  color: rgb(255, 217, 0);
+  transition: 0.4s;
 }
 .project .img {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
   margin: 0 auto;
   align-items: center;
-  justify-content: center;
-  width: 400px;
-  min-height: 15rem;
+  overflow: hidden;
+  width: 450px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 590px;
+  border: 3px solid white;
+  border-bottom: none;
+outline: none;
+
+}.project:hover .img  {
+  border: 3px solid var(--f3);
+  border-bottom: none;
+
+}
+.project:hover .info{
+  border: 3px solid var(--f3);
+  /* border-top: none; */
+
+}
+.project:hover .img  img{
+  filter: saturate(0);
+
+
 }
 .project .img img {
   width: 100%;
+  filter: saturate(1);
+
   height: 100%;
 }
-.project h1,
-.skills {
-  margin: 0 auto;
+.project .info {
+  color: white;
+  padding: 20px;
+  background-color: var(--f2);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top: none;
+border: 3px solid white;
 }
-.skills {
+.project .info a{
+text-decoration: none;color: white;
+}
+.project .info h1 {
+  font-size: 142%;
+  margin-bottom: 30px;
+}
+.project .info ul {
+  list-style: none;
   display: flex;
-  justify-content: flex-start;
-  width: 100%;
+  justify-content: center;
+  text-align: center;
+  font-size: 72%;
 }
-.skills span {
-  margin-right: 20px;
-  font-size: 85%;
-
+/* .project .info ul li{
+  padding: 2px;
+  background: white;
+} */
+.project .info .gitsecton {
+  margin: auto;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-.skills span:nth-child(1) {
- font-weight: 800;
- font-size: 110%;
-
+.project .info .gitsecton svg {
+  color: white;
+}
+.project .info .gitsecton:hover svg {
+  fill: none;
+  fill: rgb(0, 0, 0);
+  stroke: rgb(255, 217, 0);
+  stroke-width: 1px;
+}
+.project .info .gitsecton:hover span {
+  color: rgb(255, 217, 0);
+}
+@media screen and (max-width: 998px) {
+  .project .img {
+    width: 350px;
+    height: 500px;
   }
-
-.skills span:hover {
-
 }
 
-@media screen and (max-width:850) {
-  .project {
-      margin: 0 auto;
-      max-width: 48%;
-    }   
+@media screen and (max-width: 762px) {
+  .project .img {
+    width: 250px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .project .img {
+    width: 300px;
+    height: 400px;
+  }
+  .flex-proj {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 300px) {
+  .project .img {
+    min-width: 200px;
+    width: auto;
+  }
+}
+
+.img .overlay {
+  position: absolute;
+  right: 0;
+  background: black;
+  transform: translateX(120px);
+  border-bottom-left-radius: 15px;
+  border-bottom: 3px solid var(--f3);
+  border-left: 3px solid var(--f3);
+
+  opacity: 0.8;
+}
+.project:hover .img .overlay {
+  position: absolute;
+  right: 0;
+  transform: translateX(0);
+
+}
+.img .overlay ul {
+  list-style: none;
   
 }
 
-@media screen and (max-width:1050) {
-  
+.img .overlay ul li {
+  padding: 30px 10px;
+  color: white;
+  transform: translateX(120px);
+}
+.img .overlay ul li:nth-child(1) {
+  transition-delay: 0.2s;
+}
+.img .overlay ul li:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.img .overlay ul li:nth-child(3) {
+  transition-delay: 0.6s;
+}
+.img .overlay ul li:nth-child(4) {
+  transition-delay: 0.8s;
+}
+.img .overlay ul li:nth-child(5) {
+  transition-delay: 0.9s;
+}
+.project:hover .img .overlay ul li {
+  transform: translateX(0);
 }

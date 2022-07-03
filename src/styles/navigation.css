@@ -1,13 +1,14 @@
 .navigation{
     /* min-height:200px; */
-    position: relative;
     display: flex;
     flex-direction: column;
     background: var(--f2);
     width: 100%;
     min-height: 40px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+  
+ border-bottom-left-radius: 5px;
+ border-bottom-right-radius: 5px;
+border-bottom: 1px solid var(--f3);
     /* overflow: hidden; */
    max-width: 1600px;
 
@@ -38,7 +39,7 @@ li{
     padding: 20px 20px;   border-bottom:3px solid transparent ;
 }
 li a{
-    color:  rgb(195, 195, 236);;
+    color: white;
     text-decoration: none;
     width: 100%;
     height: 100%;padding: 15px 0;
@@ -46,14 +47,11 @@ li a{
     
 }
 li a.active {
-border-bottom: 3px solid white;   
+border-bottom: 3px solid var(--f3);   
 padding: 20px 0;   
 
 }
-.vertical-timeline-element-date{
-    color:#000057 ;
-    font-weight: 800;
-} 
+
 @media screen and (max-width:780px){
     .ul-navigation{    
         display: none;

@@ -28,7 +28,7 @@ setSelected(i)}
         <div className='accordion'>
     {data.map((item,i)=>(
     <div className='item' key={i}>
-        <div  className={selected===i?"title red":"title white"} onClick={()=>toggle(i)}>
+        <div  className={selected===i?"title yellow":"title white"} onClick={()=>toggle(i)}>
             <h2>{item.question}</h2>
             <span>{selected === i ? "-":"+"}</span>
         </div>

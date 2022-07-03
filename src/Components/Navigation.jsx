@@ -8,7 +8,7 @@ const Navigation = () => {
 
     let activeStyle = {
      
-        color:"white"
+        color:"var(--f3)"
         
       };
       let activeClassName = "red";
